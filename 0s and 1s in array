@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{   
+    int a[]={0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,0};
+    int size=17;
+    int numzero=0;
+    int numone=0;
+    
+    for(int  i=0;i<size;i++){
+        if(a[i]==0){
+            numzero++;
+        }
+        if(a[i]==1){
+            numone++;
+        }
+        
+    }
+    cout<<"number of one\n"<<numone;
+    cout<<"\nnumber of zero\n"<<numzero;
+   
+}
