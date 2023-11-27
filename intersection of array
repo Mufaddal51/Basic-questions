@@ -1,0 +1,36 @@
+#include <iostream>
+#include<vector>
+
+using namespace std;
+
+
+int main()
+{
+    
+ int arr[]={1,2,4,3,1,7};
+  int sizea=6;
+  int brr[]={1,5,4,6,3,7};
+  int sizeb=6;
+  vector<int>ans;
+  for(int i=0;i<sizea;i++){
+      int element=arr[i];
+      
+      
+  
+  for(int j=0;j<sizeb;j++){
+      if(element==brr[j]){
+          brr[j]=-1;
+          ans.push_back(element);
+      }
+  }
+ 
+}
+for(auto values:ans){
+    cout<<values<<" ";
+}
+
+
+}
+
+
+
