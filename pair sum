@@ -6,6 +6,7 @@ using namespace std;
 
 int main()
 {
+int sum=50;
     
 vector<int>arr{10,20,30,40,50,60,70};
 
@@ -18,6 +19,9 @@ vector<int>arr{10,20,30,40,50,60,70};
           
           for(int i=j+1;i<arr.size();i++){
               cout<<"("<<element<<","<<arr[i]<<")"<<endl;
+  if(element+arr[i]==sum){
+cout<<element<<arr[i]<<endl;
+
           }
       }
   
@@ -26,6 +30,6 @@ vector<int>arr{10,20,30,40,50,60,70};
 
 
 }
-
+}
 
 
